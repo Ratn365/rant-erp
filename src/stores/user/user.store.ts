@@ -4,7 +4,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 
 import { createSlice } from '@reduxjs/toolkit';
 
-import { getGlobalState } from '@/app/utils/getGloabal';
+import { getGlobalState } from '@/utils/getGloabal';
 
 const initialState: UserState = {
   ...getGlobalState(),

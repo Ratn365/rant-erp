@@ -1,4 +1,4 @@
-import type { MenuList } from '../../interface/layout/menu.interface';
+import type { MenuList } from '@/interface/layout/menu.interface';
 import type { FC } from 'react';
 
 import { Menu } from 'antd';

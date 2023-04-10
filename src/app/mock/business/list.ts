@@ -1,4 +1,4 @@
-import type { BuniesssUser } from '@/interface/business';
+import type { BuniesssUser } from '@/app/Interfaces/business';
 
 import qs from 'query-string';
 

@@ -1,6 +1,6 @@
 import type { LoginParams, LoginResult, LogoutParams, LogoutResult } from '../../interface/login';
 
-import { request } from './request';
+import { request } from '../request';
 
 /** 登录接口 */
 export const apiLogin = (data: LoginParams) => request<LoginResult>('post', '/user/login', data);

@@ -8,9 +8,9 @@ import { useDispatch } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { LocaleFormatter, useLocale } from '@/app/locales';
-import { formatSearch } from '@/app/utils/formatSearch';
+import { formatSearch } from '@/utils/formatSearch';
 
-import { loginAsync } from '../../stores/user/user.action';
+import { loginAsync } from '@/stores/user/user.action';
 
 const initialValues: LoginParams = {
   username: 'guest',

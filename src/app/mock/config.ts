@@ -3,7 +3,7 @@ import type { PageData } from '@/interface';
 
 import Mock from 'mockjs';
 
-import { getTableData } from '@/app/utils/get-table-page-data';
+import { getTableData } from '@/utils/get-table-page-data';
 
 Mock.setup({
   timeout: 300,

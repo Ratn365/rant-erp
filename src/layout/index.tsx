@@ -8,10 +8,10 @@ import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Outlet, useLocation } from 'react-router';
 
-import { getMenuList } from '@/app/api/layout.api';
+import { getMenuList } from '@/api/layout/layout.api';
 import { setUserItem } from '@/stores/user/user.store';
-import { getFirstPathCode } from '@/app/utils/getFirstPathCode';
-import { getGlobalState } from '@/app/utils/getGloabal';
+import { getFirstPathCode } from '@/utils/getFirstPathCode';
+import { getGlobalState } from '@/utils/getGloabal';
 
 import { useGuide } from '../pages/guide/useGuide';
 import HeaderComponent from './navBar/header';
