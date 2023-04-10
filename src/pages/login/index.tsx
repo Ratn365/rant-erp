@@ -1,4 +1,4 @@
-import type { LoginParams } from '@/stores/user/login';
+import type { LoginParams } from '@/interface/login';
 import type { FC } from 'react';
 
 import './index.less';

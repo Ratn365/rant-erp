@@ -1,4 +1,4 @@
-import type { LoginParams, LoginResult, LogoutParams, LogoutResult } from '../interface/user/login';
+import type { LoginParams, LoginResult, LogoutParams, LogoutResult } from '../../interface/login';
 
 import { request } from './request';
 

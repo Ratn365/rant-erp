@@ -1,4 +1,4 @@
-import type { Role } from '@/stores/user/login';
+import type { Role } from '@/interface/login';
 import type { Locale, UserState } from '@/stores/user/user';
 import type { PayloadAction } from '@reduxjs/toolkit';
 

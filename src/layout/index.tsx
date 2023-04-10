@@ -141,7 +141,7 @@ const LayoutPage: FC = () => {
           </Drawer>
         )}
         <Content className="layout-page-content">
-        <TagsView />
+          <TagsView />
           <Suspense fallback={null}>
             <Outlet />
           </Suspense>

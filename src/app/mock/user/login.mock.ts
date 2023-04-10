@@ -1,4 +1,4 @@
-import type { LoginResult, Role } from '@/stores/user/login';
+import type { LoginResult, Role } from '@/interface/login';
 
 import { intercepter, mock } from '../config';
 

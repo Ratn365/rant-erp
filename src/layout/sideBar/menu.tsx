@@ -58,17 +58,17 @@ const MenuComponent: FC<MenuProps> = props => {
       items={menuList.map(menu => {
         return menu.children
           ? {
-              key: menu.code,
-              label: getTitle(menu),
-              children: menu.children.map(child => ({
-                key: child.path,
-                label: child.label[locale],
-              })),
-            }
+            key: menu.code,
+            label: getTitle(menu),
+            children: menu.children.map(child => ({
+              key: child.path,
+              label: child.label[locale],
+            })),
+          }
           : {
-              key: menu.path,
-              label: getTitle(menu),
-            };
+            key: menu.path,
+            label: getTitle(menu),
+          };
       })}
     ></Menu>
   );

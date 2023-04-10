@@ -1,4 +1,4 @@
-import type { LoginParams } from '@/stores/user/login';
+import type { LoginParams } from '@/interface/login';
 import type { Dispatch } from '@reduxjs/toolkit';
 
 import { apiLogin, apiLogout } from '@/app/api/user.api';
