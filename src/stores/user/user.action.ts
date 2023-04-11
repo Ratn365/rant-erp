@@ -8,6 +8,7 @@ import { createAsyncAction } from '../utils';
 // typed wrapper async thunk function demo, no extra feature, just for powerful typings
 export const loginAsync = createAsyncAction<LoginParams, boolean>(payload => {
   return async dispatch => {
+    //call api 
     const { result, status } = await apiLogin(payload);
 
     if (status) {

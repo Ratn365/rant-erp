@@ -1,20 +1,19 @@
-import { makeAutoObservable } from "mobx";
-import { createContext, useContext } from "react";
-import tagsViewStore from "./TagView.Store";
-import GlobalStore from "./Global.Store";
-import UserStore from "./User.Store";
-
-
+import { makeAutoObservable } from 'mobx';
+import { createContext, useContext } from 'react';
+import tagsViewStore from './TagView.Store';
+import GlobalStore from './Global.Store';
+import UserStore from './User.Store';
 
 interface IRootStore {
-  userStore: UserStore;
   globalStore: GlobalStore;
+  userStore: UserStore;
+
   tagViewStore: tagsViewStore;
 }
 //impementations
 export const RootStore: IRootStore = {
-  userStore: new UserStore(),
   globalStore: new GlobalStore(),
+  userStore: new UserStore(),
   tagViewStore: new tagsViewStore(),
 };
 

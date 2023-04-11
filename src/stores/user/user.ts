@@ -1,4 +1,4 @@
-import type { Role } from '../../interface/login';
+import type { Role } from '@/interface/login';
 import type { Device } from '@/interface/layout/index.interface';
 import type { MenuChild } from '@/interface/layout/menu.interface';
 

@@ -5,10 +5,11 @@ import './index.less';
 
 import { Drawer, Layout, theme as antTheme } from 'antd';
 import { Suspense, useCallback, useEffect, useState } from 'react';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { Outlet, useLocation } from 'react-router';
-
 import { getMenuList } from '@/api/layout/layout.api';
+
 import { setUserItem } from '@/stores/user/user.store';
 import { getFirstPathCode } from '@/utils/getFirstPathCode';
 import { getGlobalState } from '@/utils/getGloabal';
@@ -26,10 +27,13 @@ const LayoutPage: FC = () => {
   const [openKey, setOpenkey] = useState<string>();
   const [selectedKey, setSelectedKey] = useState<string>(location.pathname);
   const [menuList, setMenuList] = useState<MenuList>([]);
-  const { device, collapsed, newUser } = useSelector(state => state.user);
-  const token = antTheme.useToken();
 
+
+  const { device, collapsed, newUser } = useSelector(state => state.user);
+
+  const token = antTheme.useToken();
   const isMobile = device === 'MOBILE';
+  
   const dispatch = useDispatch();
   const { driverStart } = useGuide();
 
